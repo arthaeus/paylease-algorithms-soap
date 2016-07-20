@@ -9,7 +9,7 @@ class Soap implements IAlgorithm
     {
         $x = $object->x;
         $y = $object->y;
-        $rpn = new Algorithm\Soap();
+        $rpn = new Soap();
         $client = new \nusoap_client('http://soaptest.parasoft.com/calculator.wsdl', true);
         $response = $client->call('add', array('x'=>$x, 'y'=>$y));
         $result = $response['Result'];
