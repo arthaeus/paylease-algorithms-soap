@@ -2,9 +2,6 @@
 
 namespace Algorithm;
 
-require __DIR__.'/../../vendor/autoload.php';
-use \Algorithm\IAlgorithm as IAlgorithm;
-
 class SoapMath implements IAlgorithm
 {
 
